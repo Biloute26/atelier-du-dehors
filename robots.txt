@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://biloute26.github.io/atelier-du-dehors/sitemap.xml
