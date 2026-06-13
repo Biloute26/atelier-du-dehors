@@ -201,6 +201,11 @@ footer{background:var(--charcoal);padding:60px 80px 30px;border-top:1px solid rg
   .products-grid,.cat-grid,.gadgets-grid{grid-template-columns:1fr}
   .cat-card:first-child{grid-column:span 1}.hero-stats{flex-wrap:wrap;gap:24px}
 }
+
+/* Bloc publicite */
+.pub-zone{max-width:1200px;margin:10px auto 40px;padding:0 32px;text-align:center}
+.pub-zone .pub-label{font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--smoke);margin-bottom:8px;display:block;font-family:'DM Sans',sans-serif}
+.pub-zone ins{min-height:90px}
 </style>
 
 <!-- SEO META TAGS -->
@@ -252,6 +257,8 @@ footer{background:var(--charcoal);padding:60px 80px 30px;border-top:1px solid rg
   ]
 }
 </script>
+<!-- Google AdSense -->
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2586059139929294" crossorigin="anonymous"></script>
 </head>
 <body>
 <div class="cursor-dot" id="cursorDot"></div>
@@ -454,6 +461,12 @@ footer{background:var(--charcoal);padding:60px 80px 30px;border-top:1px solid rg
 </section>
 
 <!-- ACCESSOIRES BBQ + OUTILS JARDIN + PERGOLA + GADGETS -->
+<!-- Publicite -->
+<div class="pub-zone">
+  <span class="pub-label">Publicite</span>
+  <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-2586059139929294" data-ad-slot="auto" data-ad-format="auto" data-full-width-responsive="true"></ins>
+</div>
+
 <section class="gadgets" id="gadgets">
   <div class="section-header reveal">
     <div class="section-eyebrow">Accessoires & Gadgets</div>
@@ -608,6 +621,12 @@ footer{background:var(--charcoal);padding:60px 80px 30px;border-top:1px solid rg
   </div>
 </section>
 
+<!-- Publicite -->
+<div class="pub-zone">
+  <span class="pub-label">Publicite</span>
+  <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-2586059139929294" data-ad-slot="auto" data-ad-format="auto" data-full-width-responsive="true"></ins>
+</div>
+
 <section class="newsletter">
   <div class="newsletter-content reveal">
     <div class="section-eyebrow" style="color:var(--ember-light)">Restez dans la boucle</div>
@@ -687,6 +706,11 @@ document.getElementById('subscribeBtn').addEventListener('click',()=>{
   if(inp.value&&inp.value.includes('@')){inp.value='✓ Merci ! À très vite !';inp.style.color='var(--gold-light)';inp.disabled=true;}
   else{inp.placeholder='Email valide requis !';inp.style.borderColor='var(--ember)';}
 });
+</script>
+<script>
+  document.addEventListener('DOMContentLoaded', function(){
+    try { document.querySelectorAll('.adsbygoogle').forEach(function(){ (window.adsbygoogle = window.adsbygoogle || []).push({}); }); } catch(e){}
+  });
 </script>
 </body>
 </html>
